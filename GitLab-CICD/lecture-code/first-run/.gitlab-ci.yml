@@ -8,9 +8,9 @@ build the car:
     - mkdir build
     - cd build
     - touch car.txt
-    - echo "chassis" > car.txt
-    - echo "enginge" > car.txt
-    - echo "wheels" > car.txt
+    - echo "chassis" >> car.txt
+    - echo "enginge" >> car.txt
+    - echo "wheels" >> car.txt
   artifacts:
     paths:
       - build/
