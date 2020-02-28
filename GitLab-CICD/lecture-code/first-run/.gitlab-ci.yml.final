@@ -10,16 +10,6 @@ prep the test:
     - cd build
     - touch car.txt
 
-author:
-  stage: build
-  script:    
-    - mkdir meta
-    - cd meta
-    - echo $GITLAB_USER_NAME >> author.txt
-  artifacts:
-    paths:
-      - meta/
-
 build the car:
   stage: build
   script:
