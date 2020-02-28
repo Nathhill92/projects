@@ -15,7 +15,7 @@ author:
   script:    
     - mkdir meta
     - cd meta
-    - echo $GITLAB_USER_NAME > author.txt
+    - echo $GITLAB_USER_NAME >> author.txt
   artifacts:
     paths:
       - meta/
