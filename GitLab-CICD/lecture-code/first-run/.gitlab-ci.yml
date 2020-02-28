@@ -9,7 +9,7 @@ build the car:
     - cd build
     - touch car.txt
     - echo "chassis" >> car.txt
-    - echo "enginge" >> car.txt
+    - echo "engine" >> car.txt
     - echo "wheels" >> car.txt
   artifacts:
     paths:
