@@ -11,6 +11,9 @@ build the car:
     - echo "chassis" > car.txt
     - echo "enginge" > car.txt
     - echo "wheels" > car.txt
+  artifacts:
+    paths:
+      - build/
     
 test the car:
   stage: test
