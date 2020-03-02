@@ -1,0 +1,24 @@
+stages:
+  - build
+  - test
+
+build website:
+  stage: build
+  image: node:apline
+  script:
+    - npm install
+    - npm install -g gatsby-cli
+    - gatsby build
+  artifacts:
+    paths:
+      - ./public
+
+test website:
+  stage: test
+  image: node:alpine
+  script:
+    - npm install
+    - npm install -g gatsby-cli
+    - gatsby serve &
+    - sleep 3
+    - curl "http://localhost:9000" | grep -q "Gatsby"
