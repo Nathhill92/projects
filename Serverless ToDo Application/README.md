@@ -21,3 +21,8 @@ This application is acts as a Daily “To Do” List with email reminders.
 •	Create a new EventBridge/Lambda function to purge old tasks
 
 •	Move the static S3 Website into Amplify to allow for easier code change deployments
+
+<b>Inspired</b> by AWS Serverless Workshops and ACantrill's labs on Reddit
+
+1. https://github.com/aws-samples/aws-serverless-workshops
+2. https://www.reddit.com/r/AWSCertifications/comments/jh42w0/free_weekend_aws_demo_challenge/
