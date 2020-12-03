@@ -17,4 +17,5 @@ This application is acts as a Daily “To Do” List with email reminders.
 <b>Future Considerations</b>
 
 •	Create a new EventBridge/Lambda function to purge old tasks
+
 •	Move the static S3 Website into Amplify to allow for easier code change deployments
