@@ -17,6 +17,7 @@ This project was inspired by the AWS Well-Architected Framework and AWS's Best P
 •	Both the static and dynamic content are delivered through CloudFront to accelerate site load times
 
 <b>Data Tier</b>
+
 •	The data tier makes use of PaaS solutions offered by AWS.
 
 •	Web server contents are delivered with EFS, allowing for low-latency, concurrent, and persistent data
