@@ -1,67 +1,54 @@
-# template source - https://gist.githubusercontent.com/BetterProgramming/a62909208e9f6cbd0319765695ee065d/raw/cb7e3ce1a19e18e56425ee6a3a3d369e67bcec1c/RawTextImageExtract.py
-# Article for Textract Piece - https://medium.com/better-programming/extract-data-from-pdf-files-using-aws-textract-with-python-12ba62fde1b0
+import boto3, json, random
+from io import BytesIO
 
-import boto3
-import time
+# bucket and item name
+bucket = 'serverless-app-bucket-nathan56765'
+# hard written value for testing
+document = 'Bond-note_jpzejq.png'
 
-def startJob(s3BucketName, objectName):
-    response = None
-    client = boto3.client('textract')
-    response = client.start_document_text_detection(
-        DocumentLocation={
-            'S3Object': {
-            'Bucket': s3BucketName,
-            'Name': objectName
-            }
+# Service connection variables
+
+# S3
+s3_connection = boto3.resource('s3')              
+s3_object = s3_connection.Object(bucket,document)
+s3_response = s3_object.get()
+
+# Textract
+client = boto3.client('textract')
+
+# Dynamo DB Client
+dynamodb = boto3.client('dynamodb')
+
+
+def lambda_handler(event, context):
+    outStr = ""
+    
+    # Textract detect
+    response = client.detect_document_text(Document={'S3Object': {'Bucket': bucket, 'Name': document}})
+    # Output response to CloudWatch
+    print(response)
+    
+    # Parse JSON response from Textract
+    for item in response['Blocks']:
+        if item['BlockType'] != 'LINE':
+            continue
+        else:
+            print(item['Text'])
+            outStr += item['Text'] + "\n"
+        
+    print(outStr)
+    
+    # Write outStr to DBB
+    dynamodb.put_item(
+        TableName='TextToSpeechDB',
+        Item={
+            'ID': {"S": str(random.randrange(1000))},
+            'Text':{"S":  outStr}
         }
     )
-    return response["JobId"]
-
-
-def isJobComplete(jobId):
- # For production use cases, use SNS based notification 
- # Details at: https://docs.aws.amazon.com/textract/latest/dg/api-async.html
- time.sleep(5)
- client = boto3.client('textract')
- response = client.get_document_text_detection(JobId=jobId)
- status = response["JobStatus"]
- print("Job status: {}".format(status))
-while(status == "IN_PROGRESS"):
- time.sleep(5)
- response = client.get_document_text_detection(JobId=jobId)
- status = response["JobStatus"]
- print("Job status: {}".format(status))
-return status
-
-
-def getJobResults(jobId):
-pages = []
-client = boto3.client('textract')
- response = client.get_document_text_detection(JobId=jobId)
- 
- pages.append(response)
- print("Resultset page recieved: {}".format(len(pages)))
- nextToken = None
- if('NextToken' in response):
- nextToken = response['NextToken']
-while(nextToken):
-response = client.get_document_text_detection(JobId=jobId, NextToken=nextToken)
-pages.append(response)
- print("Resultset page recieved: {}".format(len(pages)))
- nextToken = None
- if('NextToken' in response):
- nextToken = response['NextToken']
-return pages
-# Document
-s3BucketName = "<Your S3 Bucket name>"
-documentName = "<Path to the PDF inside the bucket>"
-jobId = startJob(s3BucketName, documentName)
-print("Started job with id: {}".format(jobId))
-if(isJobComplete(jobId)):
- response = getJobResults(jobId)
-#print(response)
-# Print detected text
-for resultPage in response:
- for item in resultPage["Blocks"]:
- if item["BlockType"] == "LINE":
- print ('\033[94m' + item["Text"] + '\033[0m')
+    
+    #return code
+    return {
+        'statusCode': 200,
+        'body': json.dumps(response)
+    }
