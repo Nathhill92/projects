@@ -1,4 +1,4 @@
-<img src="https://https://i.imgur.com/4ddJFL8.png" alt="Serverless Diagram">
+![alt text](https://i.imgur.com/4ddJFL8.png)
 
 <b>Summary</b>
 
