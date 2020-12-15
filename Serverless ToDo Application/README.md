@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/WYfn9ly.png" border="0">
+![alt text](https://i.imgur.com/WYfn9ly.png)
 
 <b>Summary</b>
 
