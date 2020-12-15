@@ -1,6 +1,4 @@
-https://i.imgur.com/4ddJFL8.png
-
-<img src="https://https://i.imgur.com/4ddJFL8.png" border="0"></a>
+<img src="https://https://i.imgur.com/4ddJFL8.png" alt="Serverless Diagram">
 
 <b>Summary</b>
 
