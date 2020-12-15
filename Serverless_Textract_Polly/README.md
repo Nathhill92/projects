@@ -1,6 +1,6 @@
 https://i.imgur.com/4ddJFL8.png
 
-<a href="https://i.imgur.com/4ddJFL8.png" imageanchor="1"><img src="https://https://i.imgur.com/4ddJFL8.png" border="0"></a>
+<img src="https://https://i.imgur.com/4ddJFL8.png" border="0"></a>
 
 <b>Summary</b>
 
