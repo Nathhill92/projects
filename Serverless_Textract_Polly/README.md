@@ -25,6 +25,7 @@ This application accepts images of notes, handwritten or typed, and used Textrac
 3. PDF files, particularly large ones, require a seperate, asynchronous Textract process. This requires a specific SNS topic, SQS queue, and IAM role allowing these services to communicate.
 4. Online JSON parsers make the incredibly long Textract respones much more readable - https://jsonformatter.curiousconcept.com/# - also useful for parsing "event" data in Lambda
 5. SES requires that your account be out of "Sandbox" mode to send SMS and email messages from AWS
+6. Use Versioning in Lambda to keep track of iterations - make sure that your connected services are configured to use only the "$LATEST" tag (if appropriate) as to not double process
 
 <b>Inspired</b> by AWS Serverless Workshops and ACantrill's labs on Reddit
 
