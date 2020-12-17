@@ -22,7 +22,13 @@ This application is acts as a Daily “To Do” List with email reminders.
 
 •	Move the static S3 Website into Amplify to allow for easier code change deployments
 
+•	AWS account is in "sandbox" mode and cannot send SMS/Email messages. For the purpose of these home labs, only being able to email myself is fine.
+
 <b>Inspired</b> by AWS Serverless Workshops and ACantrill's labs on Reddit
 
 1. https://github.com/aws-samples/aws-serverless-workshops
 2. https://www.reddit.com/r/AWSCertifications/comments/jh42w0/free_weekend_aws_demo_challenge/
+
+Web page -
+
+![alt text](https://i.imgur.com/7nKu681.png)
