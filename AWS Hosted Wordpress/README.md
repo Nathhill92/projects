@@ -48,4 +48,4 @@ o	A Read Replica is used for read-only operations
 
 •	PHP-fpm runs as the “apache” user by default, change to match with your web server user account - nginx in my case
 
-•	By default, WordPress generates its hyperlinks from a DB entry. This is an IP address, which doesn't really work in an elastic context. Make sure to change to the url for your ELB.
+•	By default, WordPress generates its hyperlinks from a DB entry. This is an IP address, which doesn't really work in an elastic context. Make sure to change the entry to the URL for your ELB.
