@@ -42,9 +42,9 @@ o	A Read Replica is used for read-only operations
 
 <b>Lessons Learned</b>
 
-•	PHP webservers run very poorly without byte caching enabled, especially across regions
+•	PHP webservers run very poorly without byte caching enabled, especially across AZs
 
-•	EFS adds a trivial amount of latency in this context
+•	EFS adds a trivial amount of latency in this context - https://aws.amazon.com/blogs/startups/how-to-accelerate-your-wordpress-site-with-amazon-cloudfront/
 
 o	AWS blog post about WordPress performance
 
