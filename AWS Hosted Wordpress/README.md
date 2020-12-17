@@ -46,8 +46,6 @@ o	A Read Replica is used for read-only operations
 
 •	EFS adds a trivial amount of latency in this context - https://aws.amazon.com/blogs/startups/how-to-accelerate-your-wordpress-site-with-amazon-cloudfront/
 
-o	AWS blog post about WordPress performance
+•	PHP-fpm runs as the “apache” user by default, change to match with your web server user account - nginx in my case
 
-•	PHP-fpm runs as the “apache” user by default, change to match with your web server user account
-
-•	WordPress uses a database entry to form its hyperlinks - make sure this matches the load balancer URL
+•	By default, WordPress generates its hyperlinks from a DB entry. This is an IP address, which doesn't really work in an elastic context. Make sure to change to the url for your ELB.
