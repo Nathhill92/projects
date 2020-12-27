@@ -25,7 +25,7 @@
 - [SysOps Administrator Associate Course - A Cloud Guru](https://acloud.guru/learn/82f54158-d48b-496c-9f6c-045aa5bdaea8)
 - [Jon Bonso Practice Exams (for all)](https://www.udemy.com/user/jonjonbonso/)
 
-<b>AWS Workshops/b>
+<b>AWS Workshops</b>
 - [Amplify Workshop](https://amplify-workshop.go-aws.com/10_prerequisites/20_software.html)
   
 
