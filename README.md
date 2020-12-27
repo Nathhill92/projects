@@ -51,3 +51,6 @@
 - [SysOps Administrator Associate Course - A Cloud Guru](https://acloud.guru/learn/82f54158-d48b-496c-9f6c-045aa5bdaea8)
 - [Jon Bonso Practice Exams (for all)](https://www.udemy.com/user/jonjonbonso/)
 
+<b>Misc Related Projects</b>
+- [Pet Cuddle-O-Tron Reddit Lab](https://www.reddit.com/r/AWSCertifications/comments/jh42w0/free_weekend_aws_demo_challenge/)
+- [React and GraphQL AMplify App (YouTube playlist)](https://www.youtube.com/watch?v=QV2WS535nyI)
