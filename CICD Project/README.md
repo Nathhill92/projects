@@ -1,10 +1,12 @@
 
+# Summary
+
 This project was apart of the Udemy course -  [DevOps Project: CI/CD with Jenkins Ansible Docker Kubernetes
 ](https://www.udemy.com/course/valaxy-devops/)
 
 ![alt-text](https://i.imgur.com/EFeAB9E.png "Project Diagram")
 
-<b>Application Flow</b>
+## <b>Application Flow</b>
 
 - The application flow, depicted below, is as follows:
 - A developer commits a code change to GitHub
