@@ -35,8 +35,8 @@
 - [Linux Shell Scripting: A Project-Based Approach](https://www.udemy.com/course/linux-shell-scripting-projects/)
 
 </b>Containers and Kubernetes</b>
-[Docker Mastery](https://www.udemy.com/course/docker-mastery/)
-[Kubernetes Mastery](https://www.udemy.com/course/kubernetesmastery/)
+- [Docker Mastery](https://www.udemy.com/course/docker-mastery/)
+- [Kubernetes Mastery](https://www.udemy.com/course/kubernetesmastery/)
 
 <b>Python</b>
 - [Python For Everybody](https://www.py4e.com/lessons)
