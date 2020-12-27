@@ -30,7 +30,7 @@ o	A Read Replica is used for read-only operations
 
 •	An Elasticache node is used to cache database queries for the site contents with Memcached
 
-## <b>Future Considerations</b>
+# <b>Future Considerations</b>
 
 •	Lock down SSH access to the web server with a Bastion Host
 
