@@ -57,5 +57,5 @@ The "Resume Projects" were designed and implemented myself and not based on exis
 - [Jon Bonso Practice Exams (for all)](https://www.udemy.com/user/jonjonbonso/)
 
 <b>Misc Related Projects</b>
-- [Pet Cuddle-O-Tron Reddit Lab](https://www.reddit.com/r/AWSCertifications/comments/jh42w0/free_weekend_aws_demo_challenge/)
+- [Pet Cuddle-O-Tron Serverless Lab](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-serverless-pet-cuddle-o-tron)
 - [React and GraphQL AMplify App (YouTube playlist)](https://www.youtube.com/watch?v=QV2WS535nyI)
