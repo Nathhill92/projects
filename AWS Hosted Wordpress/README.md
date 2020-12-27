@@ -1,14 +1,14 @@
 <a href="https://i.imgur.com/xXAsXWm.png" imageanchor="1"><img src="https://i.imgur.com/xXAsXWm.png" border="0"></a>
 
-<b>Summary</b>
+# <b>Summary</b>
 
 This project represents a scalable WordPress website utilizing IaaS and PaaS AWS services.
 Every component of this application was built personally without any existing automation templates. Including the VPC, Subnets, Security Groups, IAM users/roles, and application components.
 This project was inspired by the AWS Well-Architected Framework and AWS's Best Practices for WordPress.
 
-<b>Components</b>
+# <b>Components</b>
 
-<b>Application/Web Tier</b>
+## <b>Application/Web Tier</b>
 
 •	The WordPress site is hosted on a fleet of Autoscaling EC2 instances across two Availability Zones
 
@@ -16,7 +16,7 @@ This project was inspired by the AWS Well-Architected Framework and AWS's Best P
 
 •	Both the static and dynamic content are delivered through CloudFront to accelerate site load times
 
-<b>Data Tier</b>
+## <b>Data Tier</b>
 
 •	The data tier makes use of PaaS solutions offered by AWS.
 
@@ -30,7 +30,7 @@ o	A Read Replica is used for read-only operations
 
 •	An Elasticache node is used to cache database queries for the site contents with Memcached
 
-<b>Future Considerations</b>
+## <b>Future Considerations</b>
 
 •	Lock down SSH access to the web server with a Bastion Host
 
@@ -40,7 +40,7 @@ o	A Read Replica is used for read-only operations
 
 •	Operate the site as a serverless solution with Fargate or Elastic Beanstalk  
 
-<b>Lessons Learned</b>
+# <b>Lessons Learned</b>
 
 •	PHP webservers run very poorly without byte caching enabled, especially across AZs
 
