@@ -33,7 +33,7 @@
 - [Linux Mastery: Master the Command Line](https://www.udemy.com/course/linux-mastery/)
 - [Linux Shell Scripting: A Project-Based Approach](https://www.udemy.com/course/linux-shell-scripting-projects/)
 
-</b>Containers and Kubernetes</b>
+<b>Containers and Kubernetes</b>
 - [Docker Mastery](https://www.udemy.com/course/docker-mastery/)
 - [Kubernetes Mastery](https://www.udemy.com/course/kubernetesmastery/)
 
