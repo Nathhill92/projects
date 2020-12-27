@@ -6,19 +6,19 @@
 - Solutions Architect - Associate
 - Cloud Practitioner
 
-## Key Projects
+## Resume Projects
 
 - [WordPress with AWS Best Practices](https://github.com/Nathhill92/projects/tree/master/AWS%20Hosted%20Wordpress)
 - [Serverless "Notes to Speech" Application](https://github.com/Nathhill92/projects/tree/master/Serverless_Textract_Polly) *added Amplify Frontend
 - 
 
-## Other Projects
+## Key Projects
 
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
 - [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 - [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
 
-## Study Materials (Completed)
+## Study Materials and Lesser Projects
 <b>AWS Workshops</b>
 - [Amplify Workshop](https://amplify-workshop.go-aws.com/10_prerequisites/20_software.html)
 - [WildRydes Serverless Web Application](https://webapp.serverlessworkshops.io/)
