@@ -1,10 +1,7 @@
 # Short Overview
+This repository has diagrams and descriptions of my recent personal projects as well as a list of online courses that have I have completed. 
 
-## AWS Certifications
-
-- SysOps Administrator - Associate
-- Solutions Architect - Associate
-- Cloud Practitioner
+The "Resume Projects" were designed and implemented myself and not based on existing automation templates or labs. Though inspiration was taken from previous projects like that. 
 
 ## Resume Projects
 
@@ -14,9 +11,16 @@
 
 ## Key Projects
 
+- [Amplify Frontend for "Notes to Speech"](https://amplify-workshop.go-aws.com/)
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
 - [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 - [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
+
+## AWS Certifications
+
+- SysOps Administrator - Associate
+- Solutions Architect - Associate
+- Cloud Practitioner
 
 ## Study Materials and Lesser Projects
 <b>AWS Workshops</b>
@@ -36,6 +40,7 @@
 <b>Containers and Kubernetes</b>
 - [Docker Mastery](https://www.udemy.com/course/docker-mastery/)
 - [Kubernetes Mastery](https://www.udemy.com/course/kubernetesmastery/)
+- KuberCoins App from Kubernetes Course - TODO document 
 
 <b>Python</b>
 - [Python For Everybody](https://www.py4e.com/lessons)
