@@ -16,17 +16,16 @@
 
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
 - [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
+- [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
 
-## Study Materials
-
-<b>Certification Study Materials</b>
-- [Cloud Practitioner Course - A Cloud Guru](https://acloud.guru/learn/fc8d43d6-2f1d-4992-9650-b20ad4018019)
-- [Solutions Architect Associate Course - A Cloud Guru](https://acloud.guru/learn/aws-certified-solutions-architect-associate)
-- [SysOps Administrator Associate Course - A Cloud Guru](https://acloud.guru/learn/82f54158-d48b-496c-9f6c-045aa5bdaea8)
-- [Jon Bonso Practice Exams (for all)](https://www.udemy.com/user/jonjonbonso/)
-
+## Study Materials (Completed)
 <b>AWS Workshops</b>
 - [Amplify Workshop](https://amplify-workshop.go-aws.com/10_prerequisites/20_software.html)
+- [WildRydes Serverless Web Application](https://webapp.serverlessworkshops.io/)
+- [Data Processing on AWS](https://data-processing.serverlessworkshops.io/)
+- [Serverless Image Processing](https://image-processing.serverlessworkshops.io/)
+- [Decoupled Microservicies](https://async-messaging.workshop.aws/)
+- [Serverless Document Processing](https://document-processing.serverlessworkshops.io/en/)
   
 
 <b>Linux</b>
@@ -45,3 +44,10 @@
 
 <b>DevOps</b>
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
+
+<b>Certification Study Materials</b>
+- [Cloud Practitioner Course - A Cloud Guru](https://acloud.guru/learn/fc8d43d6-2f1d-4992-9650-b20ad4018019)
+- [Solutions Architect Associate Course - A Cloud Guru](https://acloud.guru/learn/aws-certified-solutions-architect-associate)
+- [SysOps Administrator Associate Course - A Cloud Guru](https://acloud.guru/learn/82f54158-d48b-496c-9f6c-045aa5bdaea8)
+- [Jon Bonso Practice Exams (for all)](https://www.udemy.com/user/jonjonbonso/)
+
