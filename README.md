@@ -11,7 +11,7 @@ Follow links for diagrams and details.
 
 ## Key Projects
 
-- [Amplify Frontend for "Notes to Speech"](https://amplify-workshop.go-aws.com/)
+- [Amplify Frontend for "Notes to Speech"](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Faws-samples%2Famplify-photo-gallery-workshop)
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
 - [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
 
