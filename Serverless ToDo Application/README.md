@@ -2,7 +2,7 @@
 
 # <b>Summary</b>
 
-This application is acts as a Daily “To Do” List with email reminders. 
+This application is acts as a daily “To Do” List with email reminders. 
 
 
 # <b>Components and Application Flow</b>
