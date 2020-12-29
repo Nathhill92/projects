@@ -6,7 +6,7 @@ Follow links for diagrams and details.
 ## Resume Projects
 
 - [WordPress with AWS Best Practices](https://github.com/Nathhill92/projects/tree/master/AWS%20Hosted%20Wordpress)
-- [Serverless "Notes to Speech" Application](https://github.com/Nathhill92/projects/tree/master/Serverless_Textract_Polly) *added Amplify Frontend
+- [Serverless "Notes to Speech" Application](https://github.com/Nathhill92/projects/tree/master/Serverless_Textract_Polly)
 - [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 
 ## Key Projects
