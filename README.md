@@ -21,7 +21,7 @@ Follow links for diagrams and details.
 - Solutions Architect - Associate
 - Cloud Practitioner
 
-## Study Materials and Lesser Projects
+## Study Materials and Labs
 <b>AWS Workshops</b>
 - [Amplify Workshop](https://amplify-workshop.go-aws.com/10_prerequisites/20_software.html)
 - [WildRydes Serverless Web Application](https://webapp.serverlessworkshops.io/)
