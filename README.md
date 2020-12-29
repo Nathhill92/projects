@@ -1,7 +1,7 @@
 # Short Overview
-This repository has diagrams and descriptions of my recent personal projects as well as a list of online courses that have I have completed. 
+Follow links for diagrams and details.
 
-The "Resume Projects" were designed and implemented myself and not based on existing automation templates or follow-along labs. These are the culmination of learnings in AWS.
+The "Resume Projects" were designed and implemented myself - not based on existing automation templates or follow-along labs. These are the culmination of learnings in AWS.
 
 ## Resume Projects
 
