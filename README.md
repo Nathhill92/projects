@@ -1,19 +1,18 @@
 # Short Overview
 Follow links for diagrams and details.
 
-The "Resume Projects" were designed and implemented myself - not based on existing automation templates or follow-along labs. These are the culmination of learnings in AWS.
+"Resume Projects" represent the culmination of my learnings in AWS and are designed and implemented myself.
 
 ## Resume Projects
 
 - [WordPress with AWS Best Practices](https://github.com/Nathhill92/projects/tree/master/AWS%20Hosted%20Wordpress)
 - [Serverless "Notes to Speech" Application](https://github.com/Nathhill92/projects/tree/master/Serverless_Textract_Polly) *added Amplify Frontend
-- 
+- [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 
 ## Key Projects
 
 - [Amplify Frontend for "Notes to Speech"](https://amplify-workshop.go-aws.com/)
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
-- [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 - [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
 
 ## AWS Certifications
