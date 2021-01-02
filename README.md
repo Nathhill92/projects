@@ -1,5 +1,5 @@
 # Short Overview
-Follow links for diagrams and details.
+This page catalogues most of my self study efforts. Follow links for diagrams, details, and code repositories.
 
 "Resume Projects" represent the culmination of my learnings in AWS and are designed and implemented myself.
 
