@@ -1,15 +1,13 @@
 # Short Overview
 This page catalogues most of my self study efforts. Follow links for diagrams, details, and code repositories.
 
-"Resume Projects" represent the culmination of my learnings in AWS and are designed and implemented myself.
-
-## Resume Projects
+## Self Designed Projects
 
 - [WordPress with AWS Best Practices](https://github.com/Nathhill92/projects/tree/master/AWS%20Hosted%20Wordpress)
 - [Serverless "Notes to Speech" Application](https://github.com/Nathhill92/projects/tree/master/Serverless_Textract_Polly)
 - [Serverless "ToDo" Application](https://github.com/Nathhill92/projects/tree/master/Serverless%20ToDo%20Application)
 
-## Key Projects
+## Highlighted Guided Projects 
 
 - [Photo Gallery App - Amplify and React](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Faws-samples%2Famplify-photo-gallery-workshop)
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
