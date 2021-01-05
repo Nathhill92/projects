@@ -62,3 +62,7 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 ## Python and Bash Practice Problems / Coding Challenges
 - [Bash](https://github.com/Nathhill92/Bash-Scripts)
 - [Python](https://github.com/Nathhill92/PY4E_Exercise/tree/master/Code%20Challenges)
+
+## Current and Future Labs
+- [AWS Well Architected Labs (in progress)](https://www.wellarchitectedlabs.com/)
+- [Serverless ETL (not started)](https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl)
