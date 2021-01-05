@@ -21,7 +21,6 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 
 ## Study Materials and Labs
 <b>AWS Workshops</b>
-- [Amplify Workshop](https://amplify-workshop.go-aws.com/10_prerequisites/20_software.html)
 - [WildRydes Serverless Web Application](https://webapp.serverlessworkshops.io/)
 - [Data Processing on AWS](https://data-processing.serverlessworkshops.io/)
 - [Serverless Image Processing](https://image-processing.serverlessworkshops.io/)
@@ -55,7 +54,7 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 
 <b>Misc Related Projects</b>
 - [Pet Cuddle-O-Tron Serverless Lab](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-serverless-pet-cuddle-o-tron)
-- [React and GraphQL AMplify App (YouTube playlist)](https://www.youtube.com/watch?v=QV2WS535nyI)
+- [React and GraphQL Amplify App (YouTube playlist)](https://www.youtube.com/watch?v=QV2WS535nyI)
 
 ## Python and Bash Practice Problems / Coding Challenges
 - [Bash](https://github.com/Nathhill92/Bash-Scripts)
