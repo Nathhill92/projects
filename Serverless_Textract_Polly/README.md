@@ -15,7 +15,7 @@ This application accepts images of notes, handwritten or typed, and used Textrac
 6. <b>DynamoDB</b> stores text output from Textract, as well as Metadata about that text
 7. <b>Lambda</b> function to forward this text to Polly
 8. <b>Polly</b> Converts stored text to an .MP3 audio file
-9. <b>(Undocumented) CloudFormation</b> stores logs and errors in applicaiton flow
+9. <b>(Undocumented) CloudFormation</b> stores logs and errors in application flow
 
 
 ## <b>Lessons Learned</b>
