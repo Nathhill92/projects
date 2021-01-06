@@ -37,6 +37,8 @@
 
 ### Lab Notes
 
+![diagram](https://www.wellarchitectedlabs.com/Operations/100_Dependency_Monitoring/Images/ArchitectureBonus.png)
+
 * Create environemnt with given CloudFormation template
 * Create an alarm that - Specified Lambda executes at least once per minute
 * Create a fail condition on purpose - delete the IGW from our routing table
