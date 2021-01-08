@@ -22,7 +22,9 @@ https://www.wellarchitectedlabs.com/security/
 * Use Parameter store to save the configuration file and make it available for our instances
 * Using Run Command again, run "AmazonCloudWatch-ManageAgent" with our config file selected for "Option Configuration Location"
 * Generate some logs by accessing the webpage
-* View in 
+* View in Cloudwatch
+* Export to S3
+* Use Athena to query exported logs
 
 ## Basic EC2 WAF Protection
 
