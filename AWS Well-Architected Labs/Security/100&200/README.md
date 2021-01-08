@@ -1,6 +1,28 @@
 https://www.wellarchitectedlabs.com/security/
-  
+
 # 200 Level
+
+## REMOTE CONFIGURATION, INSTALLATION, AND VIEWING OF CLOUDWATCH LOGS
+
+![](https://www.wellarchitectedlabs.com/Security/200_Remote_Configuration_Installation_and_Viewing_CloudWatch_Logs/Images/datadistancingarch.png)
+
+### Key Takeaways
+
+* Can use the Run Command in SSM to install the Cloudwatch Agent to your fleet at once - pretty useful
+* Parameter store can be used for standardized configuration files
+* CloudWatch logs can be exported to S3
+  * Use Athena to query those logs 
+
+### Lab Notes
+
+* Launch CF stack with components
+* Install CloudWatch Agent using the Run Command option in SSM
+  * ![](https://www.wellarchitectedlabs.com/Security/200_Remote_Configuration_Installation_and_Viewing_CloudWatch_Logs/Images/install-cw-agent-3.png)
+* Create a standard CloudWatch configuration file for our agent
+* Use Parameter store to save the configuration file and make it available for our instances
+* Using Run Command again, run "AmazonCloudWatch-ManageAgent" with our config file selected for "Option Configuration Location"
+* Generate some logs by accessing the webpage
+* View in 
 
 ## Basic EC2 WAF Protection
 
@@ -15,6 +37,13 @@ Supplemented materials with this YouTube video on WAFs - https://www.youtube.com
  * ex. Slow loris - flood of legitimate, valid HTTP requests to saturate your network
  * these attacks are about attacking the application itself, not the network
 
+
+## AWS Certificate Manager - Request Public Certificate
+
+* Short lab 
+* Good to know that AWS offers this service - providing Public Certificates for your owned domains
+
+## CloudFront for Web Application
 
 
 # 100 Level
