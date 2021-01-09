@@ -32,6 +32,7 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 - [Linux Journey](https://linuxjourney.com/)
 - [Linux Mastery: Master the Command Line](https://www.udemy.com/course/linux-mastery/)
 - [Linux Shell Scripting: A Project-Based Approach](https://www.udemy.com/course/linux-shell-scripting-projects/)
+- [Various Bash Challenges/Scripts](https://github.com/Nathhill92/Bash-Scripts)
 
 <b>Containers and Kubernetes</b>
 - [Docker Mastery](https://www.udemy.com/course/docker-mastery/)
@@ -41,7 +42,7 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 <b>Python</b>
 - [Python For Everybody](https://www.py4e.com/lessons)
 - [Automate the Boring Stuff with Python](https://www.udemy.com/course/automate/)
-- [Various Coding Challenges(mostly hard/very hard)](https://edabit.com/challenges/python3)
+- [Various Coding Challenges](https://github.com/Nathhill92/PY4E_Exercise/tree/master/Code%20Challenges)
 
 <b>DevOps</b>
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
@@ -55,10 +56,6 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 <b>Misc Related Projects</b>
 - [Pet Cuddle-O-Tron Serverless Lab](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-serverless-pet-cuddle-o-tron)
 - [React and GraphQL Amplify App (YouTube playlist)](https://www.youtube.com/watch?v=QV2WS535nyI)
-
-## Python and Bash Practice Problems / Coding Challenges
-- [Bash](https://github.com/Nathhill92/Bash-Scripts)
-- [Python](https://github.com/Nathhill92/PY4E_Exercise/tree/master/Code%20Challenges)
 
 ## Current and Future Labs
 - [AWS Well Architected Labs (in progress)](https://www.wellarchitectedlabs.com/)
