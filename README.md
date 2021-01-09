@@ -9,9 +9,9 @@ This page catalogues most of my self study efforts. Follow links for diagrams, d
 
 ## Highlighted Guided Projects 
 
-- [Photo Gallery App - Amplify and React](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Faws-samples%2Famplify-photo-gallery-workshop)
 - [CI/CD with Jenkins/Ansible](https://github.com/Nathhill92/projects/tree/master/CICD%20Project)
-- [Innovator Island (re-invent Lab)](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
+- [Innovator Island Serverless Application](https://github.com/aws-samples/aws-serverless-workshop-innovator-island)
+- [Photo Gallery App - Amplify and React](https://amplify-workshop.go-aws.com/)
 
 ## AWS Certifications
 
