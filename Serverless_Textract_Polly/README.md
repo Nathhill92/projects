@@ -2,7 +2,7 @@
 
 ## <b>Summary</b>
 
-This application accepts images of notes, handwritten or typed, and used Textract and Polly to turn those notes into an MP3 audio file.
+This application accepts images of notes, handwritten or typed, and uses Textract and Polly to turn those notes into an MP3 audio file.
 
 
 ## <b>Components and Application Flow</b>
