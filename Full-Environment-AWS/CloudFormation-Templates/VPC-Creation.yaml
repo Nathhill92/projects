@@ -1,5 +1,9 @@
-Description: Deploys a VPC with 1 private and 1 public subnet in us-east-1a, 1b, 
-and 1c. Internet gateways are attachached to public subnets for each.
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: |
+  Deploys a VPC with 1 private and 1 public subnet in us-east-1a, 1b, and 1c. 
+  Internet gateways are attachached to public subnets for each.
+  No Nat Gateways are used for cost savings
 
 Parameters:
   EnvironmentName:
@@ -47,8 +51,8 @@ Resources:
     Type: AWS::EC2::VPC
     Properties:
       CidrBlock: !Ref VpcCIDR
+      EnableDNSHostnames: true
       EnableDnsSupport: true
-      EnableDNSHostNames: true
       Tags:
         - Key: Name
           Value: !Ref EnvironmentName
@@ -132,7 +136,7 @@ Resources:
         - Key: Name
           Value: !Sub ${EnvironmentName} Private Subnet (AZ3)
  
- PublicRouteTable:
+  PublicRouteTable:
     Type: AWS::EC2::RouteTable
     Properties:
       VpcId: !Ref VPC
