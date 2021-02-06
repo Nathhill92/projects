@@ -7,21 +7,21 @@ Resources:
     Properties: 
       GroupDescription: Security Group for ELB <-> Webserver
       GroupId: WordPress-ELB-SG
-      VpcId: fn::ImportValue: VPC  
+      VpcId: !ImportValue VPC  
   
   ElasticacheSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
       GroupDescription: Security Group for Elasticache <-> Webserver
       GroupId: WordPress-Elasticache-SG
-      VpcId: fn::ImportValue: VPC
+      VpcId: !ImportValue VPC
 
   RDSSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
       GroupDescription: Security Group for RDS <-> Webserver
       GroupId: WordPress-RDS-SG
-      VpcId: fn::ImportValue: VPC
+      VpcId: !ImportValue VPC
 
   WebserverSecurityGroup:
     Type: AWS::EC2::SecurityGroup
@@ -89,7 +89,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: 0.0.0.0/32
+      DestinationPrefixListId: "0.0.0.0/32"
 
 # RDS Rules
 
@@ -109,7 +109,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: 0.0.0.0/32
+      DestinationPrefixListId: "0.0.0.0/32"
 
 # Elasticache Rules
 
@@ -129,8 +129,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: 0.0.0.0/32
-
+      DestinationPrefixListId: "0.0.0.0/32"
 
 Outputs:
   ELBSecurityGroup:
