@@ -1,34 +1,34 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
-# Becasue we want the groups to reference eachother, we are going to create the groups first and then handle the routes
+# Because we want the groups to reference eachother, we are going to create the groups first and then handle the routes
 Resources:
   ELBSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
-      GroupDescription: Security Group for ELB <-> Webserver
-      GroupId: WordPress-ELB-SG
+      GroupDescription: Security Group for ELB and Webserver
+      GroupName: WordPress-ELB-SG
       VpcId: !ImportValue VPC  
   
   ElasticacheSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
-      GroupDescription: Security Group for Elasticache <-> Webserver
-      GroupId: WordPress-Elasticache-SG
+      GroupDescription: Security Group for Elasticache and Webserver
+      GroupName: WordPress-Elasticache-SG
       VpcId: !ImportValue VPC
 
   RDSSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
-      GroupDescription: Security Group for RDS <-> Webserver
-      GroupId: WordPress-RDS-SG
+      GroupDescription: Security Group for RDS and Webserver
+      GroupName: WordPress-RDS-SG
       VpcId: !ImportValue VPC
 
   WebserverSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties: 
       GroupDescription: Security Group for WordPress Webserver
-      GroupId: WordPress-Webserver-SG
-      VpcId: fn::ImportValue: VPC
+      GroupName: WordPress-Webserver-SG
+      VpcId: !ImportValue VPC
       SecurityGroupIngress:
         IpProtocol: tcp
         FromPort: 22
@@ -40,7 +40,7 @@ Resources:
   WebserverIngress01:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 443
       ToPort: 443
@@ -49,7 +49,7 @@ Resources:
   WebserverIngress02:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 80
       ToPort: 80
@@ -58,7 +58,7 @@ Resources:
   WebserverIngress03:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 3306
       ToPort: 3306
@@ -67,7 +67,7 @@ Resources:
   WebserverIngress04:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 11211
       ToPort: 11211
@@ -76,7 +76,7 @@ Resources:
   WebserverIngress05:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
@@ -85,18 +85,18 @@ Resources:
   WebserverEgress:
     Type: 'AWS::EC2::SecurityGroupEgress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref WebserverSecurityGroup
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: "0.0.0.0/32"
+      CidrIp: 0.0.0.0/32
 
 # RDS Rules
 
   RDSIngress:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref RDSSecurityGroup
       IpProtocol: tcp
       FromPort: 3306
       ToPort: 3306
@@ -105,18 +105,18 @@ Resources:
   RDSEgress:
     Type: 'AWS::EC2::SecurityGroupEgress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref RDSSecurityGroup
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: "0.0.0.0/32"
+      CidrIp: 0.0.0.0/32
 
 # Elasticache Rules
 
   ElasticacheIngress:
     Type: 'AWS::EC2::SecurityGroupIngress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref  ElasticacheSecurityGroup
       IpProtocol: tcp
       FromPort: 11211
       ToPort: 11211
@@ -125,11 +125,11 @@ Resources:
   ElasticacheEgress:
     Type: 'AWS::EC2::SecurityGroupEgress'
     Properties:
-      GroupId: !Ref GroupName:
+      GroupId: !Ref ElasticacheSecurityGroup
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      DestinationPrefixListId: "0.0.0.0/32"
+      CidrIp: 0.0.0.0/32
 
 Outputs:
   ELBSecurityGroup:
