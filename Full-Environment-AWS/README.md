@@ -36,7 +36,12 @@ These components will not be deleted or created during the automated "start of d
  * Initial creation is manual. This will be automated later using "restore from backup" options in CloudFormation.
  
  ### Step 2a - RDS
+ * Follow the steps outlined here - https://aws.amazon.com/getting-started/hands-on/deploy-wordpress-with-amazon-rds/1/
+ * Note - create the "WordPress" database at RDS instance creation time
+   * Avoids permissions oddities - RDS "root" accounts have less access than typical database "root" accounts
+ 
  ### Step 2b - Elasticache
+ 
  ### Step 2c - EFS
  
  ## Step 3 - Webserver setup and AMI creation
