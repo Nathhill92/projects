@@ -47,3 +47,5 @@ These components will not be deleted or created during the automated "start of d
  ## Step 3 - Webserver setup and AMI creation
  
  * Follow the steps outlined here - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
+* Install opcache and add the configuration changes listed here - https://aws.amazon.com/blogs/storage/optimizing-wordpress-performance-with-amazon-efs/
+* This will DRAMATICALLY speed up multiserver/EFS WordPress implementations by caching compiled PHP
