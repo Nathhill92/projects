@@ -89,7 +89,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      CidrIp: 0.0.0.0/32
+      CidrIp: 0.0.0.0/0
 
 # RDS Rules
 
@@ -109,7 +109,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      CidrIp: 0.0.0.0/32
+      CidrIp: 0.0.0.0/0
 
 # Elasticache Rules
 
@@ -129,7 +129,7 @@ Resources:
       IpProtocol: tcp
       FromPort: 0
       ToPort: 65535
-      CidrIp: 0.0.0.0/32
+      CidrIp: 0.0.0.0/0
 
 Outputs:
   ELBSecurityGroup:
