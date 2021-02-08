@@ -45,3 +45,5 @@ These components will not be deleted or created during the automated "start of d
  ### Step 2c - EFS
  
  ## Step 3 - Webserver setup and AMI creation
+ 
+ * Follow the steps outlined here - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
