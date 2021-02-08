@@ -14,3 +14,29 @@ Quick description
   * etc.
 
 Documentation will come later
+
+## Step 1 - Base Infrastructure
+
+These components will not be deleted or created during the automated "start of day" and "end of day" operations. 
+
+### Step 1a - VPC and Subnets
+
+* CloudFormation Template
+
+### Step 1b - Security Groups
+
+* CloudFormation Template
+ * Note about using CloudFormation to make Security Groups - If you need your SGs to reference eachother, do the Creation and Ingress separately. 
+ 
+ ### step 1c - IAM Roles
+ * Will automate this after doing it manually - to know exactly what permissions are needed
+ 
+ ## Step 2 - Initial Component Creations
+ 
+ * Initial creation is manual. This will be automated later using "restore from backup" options in CloudFormation.
+ 
+ ### Step 2a - RDS
+ ### Step 2b - Elasticache
+ ### Step 2c - EFS
+ 
+ ## Step 3 - Webserver setup and AMI creation
