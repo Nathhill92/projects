@@ -35,6 +35,13 @@ Resources:
         ToPort: 22
         CidrIp: 0.0.0.0/0
 
+  EFSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupDescription: Security Group for EFS and Webserver
+      GroupName: WordPress-EFS-SG
+      VpcId: !ImportValue VPC  
+
 #Webserver Rules
 
   WebserverIngress01:
@@ -131,6 +138,26 @@ Resources:
       ToPort: 65535
       CidrIp: 0.0.0.0/0
 
+# EFS Rules
+
+  ElasticacheIngress:
+    Type: 'AWS::EC2::SecurityGroupIngress'
+    Properties:
+      GroupId: !Ref  EFSSecurityGroup
+      IpProtocol: tcp
+      FromPort: 2049
+      ToPort: 2049
+      SourceSecurityGroupId: !GetAtt WebserverSecurityGroup.GroupId
+
+  ElasticacheEgress:
+    Type: 'AWS::EC2::SecurityGroupEgress'
+    Properties:
+      GroupId: !Ref EFSSecurityGroup
+      IpProtocol: tcp
+      FromPort: 0
+      ToPort: 65535
+      CidrIp: 0.0.0.0/0
+
 Outputs:
   ELBSecurityGroup:
     Value: !Ref ELBSecurityGroup
@@ -143,3 +170,6 @@ Outputs:
 
   WebserverSecurityGroup:
     Value: !Ref WebserverSecurityGroup
+
+  EFSSecurityGroup:
+    Value: !Ref EFSSecurityGroup
