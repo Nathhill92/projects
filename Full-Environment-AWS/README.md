@@ -21,12 +21,20 @@ These components will not be deleted or created during the automated "start of d
 
 ### Step 1a - VPC and Subnets
 
-* CloudFormation Template
+* CloudFormation Template linked above
+* Creates VPC and Subnets in us-east-1
+* 1 Private and 1 Public subnet each across 3 availability zones
 
 ### Step 1b - Security Groups
 
 * CloudFormation Template
- * Note about using CloudFormation to make Security Groups - If you need your SGs to reference eachother, do the Creation and Ingress separately. 
+  * Note about using CloudFormation to make Security Groups - If you need your SGs to reference eachother, do the Creation and Ingress separately.
+* Webserver
+  * Webserver SSH
+* Load Balancer
+* EFS
+* Elasticache
+* RDS
  
  ### step 1c - IAM Roles
  * Will automate this after doing it manually - to know exactly what permissions are needed
@@ -39,13 +47,27 @@ These components will not be deleted or created during the automated "start of d
  * Follow the steps outlined here - https://aws.amazon.com/getting-started/hands-on/deploy-wordpress-with-amazon-rds/
  * Note - create the "WordPress" database at RDS instance creation time
    * Avoids permissions oddities - RDS "root" accounts have less access than typical database "root" accounts
+ * Create a Read Replica - will mount this later in "WordPress Plugins" step
  
  ### Step 2b - Elasticache
  
  ### Step 2c - EFS
+ * Make sure to attach new Security Groups allowing NFS access to your webserver
+ * Attach EFS to /var/www (or whatever you set as your root directory)
+ * Update the fstab file on your webserver following these instructions - https://docs.aws.amazon.com/efs/latest/ug/mount-fs-auto-mount-onreboot.html
  
- ## Step 3 - Webserver setup and AMI creation
+ ## Step 3a - Webserver setup
  
- * Follow the steps outlined here - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
+* Follow the steps outlined here - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
 * Install opcache and add the configuration changes listed here - https://aws.amazon.com/blogs/storage/optimizing-wordpress-performance-with-amazon-efs/
-* This will DRAMATICALLY speed up multiserver/EFS WordPress implementations by caching compiled PHP
+  * This will DRAMATICALLY speed up multiserver/EFS WordPress implementations by caching compiled PHP
+
+## Step 3b - WordPress Plugins
+
+## Step 3c - AMI Creation
+
+## Step 3d - Elastic Load Balancer Creation and Target Registration
+
+## Step 3e - Autoscaling Group Configuration
+
+
