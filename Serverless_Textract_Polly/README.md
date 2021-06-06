@@ -20,7 +20,7 @@ This application accepts images of notes, handwritten or typed, and uses Textrac
 
 ## <b>Lessons Learned</b>
 
-0. Initialize connections to services OUTSIDE of the handler - these will actually maintain a short, active connection after execution so that preceding instances of this Lambda functions will not need to create an entirely new connection every time.
+0. Initialize connections to services OUTSIDE of the handler - these will actually maintain a short, active connection after execution so that proceding instances of this Lambda functions will not need to create an entirely new connection every time.
 1. The subscription filter feature in SNS uses the Message Attributes (metadata) fields, not the passed data field
 2. To pass JSON objects between SNS and SQS, select "Enable Raw Message Delivery" in the SNS queue
 3. PDF files, particularly large ones, require a seperate, asynchronous Textract process. This requires a specific SNS topic, SQS queue, and IAM role allowing these services to communicate.
